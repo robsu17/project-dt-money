@@ -4,7 +4,7 @@
       "id": 1,
       "description": "Desenvolvimento de site",
       "type": "income",
-      "category": "Venda",
+      "category": "Trabalho",
       "price": 14000,
       "createdAt": "2022-07-29T19:36:44.5052"
     },
@@ -14,6 +14,22 @@
       "type": "outcome",
       "category": "Alimentação",
       "price": 50,
+      "createdAt": "2022-10-29T19:36:44.5052"
+    },
+    {
+      "id": 3,
+      "description": "Almoço",
+      "type": "outcome",
+      "category": "Alimentação",
+      "price": 154,
+      "createdAt": "2022-10-29T19:36:44.5052"
+    },
+    {
+      "id": 4,
+      "description": "Desenvolvimento de site",
+      "type": "income",
+      "category": "Trabalho",
+      "price": 1540,
       "createdAt": "2022-10-29T19:36:44.5052"
     }
   ]
