@@ -31,6 +31,14 @@
       "category": "Trabalho",
       "price": 1540,
       "createdAt": "2022-10-29T19:36:44.5052"
+    },
+    {
+      "id": 5,
+      "description": "Pc Gamer",
+      "type": "outcome",
+      "category": "compras",
+      "price": 3500,
+      "createdAt": "2022-10-31T19:36:44.5052"
     }
   ]
 }
