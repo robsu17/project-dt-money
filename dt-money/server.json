@@ -17,28 +17,28 @@
       "createdAt": "2022-10-29T19:36:44.5052"
     },
     {
-      "id": 3,
-      "description": "Almoço",
+      "description": "Comida",
+      "price": 540,
+      "category": "Compras",
       "type": "outcome",
+      "createdAt": "2023-06-23T12:18:40.389Z",
+      "id": 3
+    },
+    {
+      "description": "Iogurte de banana",
+      "price": 5,
       "category": "Alimentação",
-      "price": 154,
-      "createdAt": "2022-10-29T19:36:44.5052"
-    },
-    {
-      "id": 4,
-      "description": "Desenvolvimento de site",
-      "type": "income",
-      "category": "Trabalho",
-      "price": 1540,
-      "createdAt": "2022-10-29T19:36:44.5052"
-    },
-    {
-      "id": 5,
-      "description": "Pc Gamer",
       "type": "outcome",
-      "category": "compras",
-      "price": 3500,
-      "createdAt": "2022-10-31T19:36:44.5052"
+      "createdAt": "2023-06-23T13:02:59.763Z",
+      "id": 4
+    },
+    {
+      "description": "Salario",
+      "price": 1400,
+      "category": "Programação",
+      "type": "income",
+      "createdAt": "2023-06-23T13:04:24.742Z",
+      "id": 5
     }
   ]
 }
