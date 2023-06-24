@@ -1,6 +1,6 @@
 # dt money
 
-## Projeto que simula um site de finanças onde você pode administrar todas as entradas e saídas com funcionalidades de adicionar novas transações através de um modal e busca dessas transações.
+### Projeto que simula um site de finanças onde você pode administrar todas as entradas e saídas com funcionalidades de adicionar novas transações através de um modal e busca dessas transações.
 
 ## Projeto da trilha Ignite do RocketSeat
 
