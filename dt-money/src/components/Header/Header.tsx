@@ -8,7 +8,7 @@ export function Header() {
   return (
     <HeaderContainer>
       <HeaderContent>
-        <img src={logoImg} />
+        <img src={logoImg} alt="image" />
 
         <Dialog.Root>
           <Dialog.Trigger asChild>
