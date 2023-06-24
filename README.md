@@ -1,18 +1,8 @@
 # dt money
 
-<br>
+## Projeto que simula um site de finanças onde você pode administrar todas as entradas e saídas com funcionalidades de adicionar novas transações através de um modal e busca dessas transações.
 
-## Tópicos 
-
-[Sobre o dt money](#sobre-o-dt-money)
-
-[Tecnologias](#tecnologias)
-
-[Instalação e uso](#instalação-e-uso)
-
-[Licença](#licença)
-
-<br>
+## Projeto da trilha Ignite do RocketSeat
 
 ## Sobre o dt money
 
@@ -21,7 +11,7 @@ O dt money é uma alternativa simples e eficaz para gerenciar suas finanças, pe
 <br>
 
 <p align="center">
-  <img src=".github/cover.png" alt="Página inicial">
+  <img src="https://github.com/robsu17/project-dt-money/assets/105562688/3cdfaf06-a5f8-498c-938d-fb7daf808a2e" alt="Página inicial">
 </p>
 
 ## Tecnologias
@@ -31,34 +21,20 @@ Tecnologias e ferramentas utilizadas no desenvolvimento do projeto:
 - [React](https://reactjs.org/)
 - [TypeScript](https://www.typescriptlang.org/)
 - [Styled Components](https://styled-components.com/)
-- [MirageJS](https://miragejs.com/)
+- [JsonServer](https://www.npmjs.com/package/json-server)
 - [Axios](https://github.com/axios/axios)
-- [Polished](https://polished.js.org/)
 
 <br>
 
 ## Instalação e uso
 
-```bash
-# Abra um terminal e copie este repositório com o comando
-git clone https://github.com/martins-rafael/dtmoney.git
-# ou use a opção de download.
-
 # Entre na pasta web com 
-cd dtmoney
+cd ./dt-money
 
 # Instale as dependências
-yarn install
+npm install
 
-# Rode a aplicação
-yarn start
-```
+## Rode a aplicação
+### - npm run dev
+### - npm run backend (Para rodar a simulação do backend)
 
-<br>
-
----
-
-Feito com :orange_heart: by [Rafael Martins](https://github.com/martins-rafael)
-
-[![Linkedin Badge](https://img.shields.io/badge/-Rafael%20Martins-ff512f?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/rafaeldcmartins/)](https://www.linkedin.com/in/rafaeldcmartins/) 
-[![Gmail Badge](https://img.shields.io/badge/-rafaeldcmartins@gmail.com-ff512f?style=flat-square&logo=Gmail&logoColor=white&link=mailto:rafaeldcmartins@gmail.com)](mailto:rafaeldcmartins@gmail.com)
