@@ -39,6 +39,14 @@
       "type": "income",
       "createdAt": "2023-06-23T13:04:24.742Z",
       "id": 5
+    },
+    {
+      "description": "adwwa",
+      "price": 455454,
+      "category": "Compras",
+      "type": "outcome",
+      "createdAt": "2023-06-24T13:01:00.164Z",
+      "id": 6
     }
   ]
 }
