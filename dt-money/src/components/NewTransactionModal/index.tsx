@@ -2,7 +2,13 @@ import * as Dialog from '@radix-ui/react-dialog'
 import * as z from 'zod'
 import { ArrowCircleDown, ArrowCircleUp, X } from 'phosphor-react'
 
-import { CloseButton, Content, Overlay, TransactionType, TransactionTypeButton } from './styles'
+import {
+  CloseButton,
+  Content,
+  Overlay,
+  TransactionType,
+  TransactionTypeButton,
+} from './styles'
 import { Controller, useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { useContext } from 'react'
@@ -12,7 +18,7 @@ const newTransactionFromSchema = z.object({
   description: z.string(),
   price: z.number(),
   category: z.string(),
-  type: z.enum(['income', 'outcome'])
+  type: z.enum(['income', 'outcome']),
 })
 
 type NewTransactionFormInputs = z.infer<typeof newTransactionFromSchema>
@@ -22,25 +28,25 @@ export function NewTransactionModal() {
 
   const {
     control,
-    register, 
-    handleSubmit, 
-    formState: {isSubmitting},
-    reset
+    register,
+    handleSubmit,
+    formState: { isSubmitting },
+    reset,
   } = useForm<NewTransactionFormInputs>({
     resolver: zodResolver(newTransactionFromSchema),
     defaultValues: {
-      type: 'income'
-    }
+      type: 'income',
+    },
   })
 
   async function handleCreateNewTransaction(data: NewTransactionFormInputs) {
     const { description, category, price, type } = data
-    
+
     await createTransaction({
       description,
       type,
       category,
-      price
+      price,
     })
 
     reset()
@@ -48,48 +54,51 @@ export function NewTransactionModal() {
 
   return (
     <Dialog.Portal>
-      <Overlay/>
+      <Overlay />
 
       <Content>
         <Dialog.Title>Nova transação</Dialog.Title>
 
         <CloseButton>
-          <X size={24}/>
+          <X size={24} />
         </CloseButton>
 
         <form onSubmit={handleSubmit(handleCreateNewTransaction)}>
-          <input 
-            type="text" 
-            placeholder='Descrição' 
+          <input
+            type="text"
+            placeholder="Descrição"
             required
             {...register('description')}
           />
-          <input 
-            type="number" 
-            placeholder='Preço' 
+          <input
+            type="number"
+            placeholder="Preço"
             required
-            {...register('price', {valueAsNumber: true})}
+            {...register('price', { valueAsNumber: true })}
           />
-          <input 
-            type="text" 
-            placeholder='Categoria' 
+          <input
+            type="text"
+            placeholder="Categoria"
             required
             {...register('category')}
           />
 
-          <Controller 
+          <Controller
             control={control}
             name="type"
             render={({ field }) => {
               return (
-                <TransactionType onValueChange={field.onChange} value={field.value}>
-                  <TransactionTypeButton variant='income' value='income'>
-                    <ArrowCircleUp size={24}/>
+                <TransactionType
+                  onValueChange={field.onChange}
+                  value={field.value}
+                >
+                  <TransactionTypeButton variant="income" value="income">
+                    <ArrowCircleUp size={24} />
                     Entrada
                   </TransactionTypeButton>
-                  
-                  <TransactionTypeButton variant='outcome' value='outcome'>
-                    <ArrowCircleDown size={24}/>
+
+                  <TransactionTypeButton variant="outcome" value="outcome">
+                    <ArrowCircleDown size={24} />
                     Saída
                   </TransactionTypeButton>
                 </TransactionType>
@@ -97,7 +106,9 @@ export function NewTransactionModal() {
             }}
           />
 
-          <button type='submit' disabled={isSubmitting}>Cadastrar</button>
+          <button type="submit" disabled={isSubmitting}>
+            Cadastrar
+          </button>
         </form>
       </Content>
     </Dialog.Portal>
