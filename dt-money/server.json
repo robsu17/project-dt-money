@@ -15,6 +15,14 @@
       "type": "outcome",
       "createdAt": "2023-06-24T14:32:15.385Z",
       "id": 2
+    },
+    {
+      "description": "dsaasd",
+      "price": 123,
+      "category": "adw",
+      "type": "outcome",
+      "createdAt": "2023-06-26T23:28:37.977Z",
+      "id": 3
     }
   ]
 }
